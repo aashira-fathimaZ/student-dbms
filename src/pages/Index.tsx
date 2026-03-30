@@ -3,7 +3,7 @@ import HeroSection from "@/components/landing/HeroSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import BenefitsSection from "@/components/landing/BenefitsSection";
-import TechStackSection from "@/components/landing/TechStackSection";
+
 import CTASection from "@/components/landing/CTASection";
 import Footer from "@/components/landing/Footer";
 
