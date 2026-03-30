@@ -37,8 +37,8 @@ const HeroSection = () => (
         <div className="bg-card rounded-2xl shadow-card border border-border p-6 animate-float">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-3 h-3 rounded-full bg-destructive" />
-            <div className="w-3 h-3 rounded-full bg-yellow-400" />
-            <div className="w-3 h-3 rounded-full bg-green-400" />
+            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "hsl(38, 92%, 50%)" }} />
+            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "hsl(142, 71%, 45%)" }} />
             <span className="ml-2 text-xs text-muted-foreground font-medium">Dashboard — SDMS</span>
           </div>
           <div className="grid grid-cols-2 gap-3 mb-4">
