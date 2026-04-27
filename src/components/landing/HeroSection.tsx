@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Users, FileText, BarChart3, Shield } from "lucide-react";
 
@@ -22,8 +23,8 @@ const HeroSection = () => (
           Effortlessly manage student records with speed, accuracy, and control.
         </p>
         <div className="flex flex-wrap gap-4">
-          <Button variant="hero" size="lg">Get Started</Button>
-          <Button variant="heroOutline" size="lg">Admin Login</Button>
+          <Button asChild variant="hero" size="lg"><Link to="/login">Get Started</Link></Button>
+          <Button asChild variant="heroOutline" size="lg"><Link to="/login">Admin Login</Link></Button>
         </div>
       </motion.div>
 

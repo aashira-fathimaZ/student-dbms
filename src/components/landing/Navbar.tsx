@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
@@ -16,7 +17,7 @@ const Navbar = () => {
               {l}
             </a>
           ))}
-          <Button variant="hero" size="sm">Admin Login</Button>
+          <Button asChild variant="hero" size="sm"><Link to="/login">Admin Login</Link></Button>
         </div>
         <button className="md:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -29,7 +30,7 @@ const Navbar = () => {
               {l}
             </a>
           ))}
-          <Button variant="hero" size="sm" className="w-full">Admin Login</Button>
+          <Button asChild variant="hero" size="sm" className="w-full"><Link to="/login" onClick={() => setOpen(false)}>Admin Login</Link></Button>
         </div>
       )}
     </nav>
