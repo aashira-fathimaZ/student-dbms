@@ -1,0 +1,17 @@
+# Application routing configuration
+routes:
+  - name: home
+    path: /
+    component: Index
+    public: true
+
+  - name: login
+    path: /login
+    component: Login
+    public: true
+
+  - name: dashboard
+    path: /dashboard
+    component: Dashboard
+    public: false
+    requires: admin
